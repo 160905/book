@@ -1,9 +1,4 @@
 # Summary
 
-* [Introduction](README.md)
-* [Introduction](README.md)
-* [Introduction](README.md)
-* [Introduction](README.md)
-* [Introduction](README.md)
-* [Introduction](README.md)
+* [Home](README.md)
 
