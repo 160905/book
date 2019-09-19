@@ -8,7 +8,41 @@
 	"gitbook": "3.2.3",
 	"links": {
 		"sidebar": {
-			"我的网站": "https://snowdreams1006.cn/"
+			"<div><img height=20 style='position:relative; top:5px; padding-right:5px ' src='http://ww1.sinaimg.cn/large/005KfPpigy1g74nm0s1x6j3078078jrk.jpg'/> Flutter中文网</div>": "https://flutterchina.club"
+		}
+	},
+	"styles": {
+		"website": "styles/website.css",
+		"ebook": "styles/ebook.css",
+		"pdf": "styles/pdf.css",
+		"mobi": "styles/mobi.css",
+		"epub": "styles/epub.css"
+	},
+	"plugins": [
+		"-search",
+		"search-pro",
+		"ace",
+		"splitter",
+		"prism",
+		"donate",
+		"-highlight"
+	],
+	"pluginsConfig": {
+		"prism": {
+			"lang": {
+				"shell": "bash"
+			}
+		},
+		"search-pro": {
+			"cutWordLib": "nodejieba",
+			"defineWord": [
+				"Gitbook Use"
+			]
+		},
+		"donate": {
+			"wechat": "http://ww1.sinaimg.cn/large/005KfPpigy1g74nb6zhkej30kw0r2771.jpg",
+			"button": "加微信",
+			"wechatText": "快烧我"
 		}
 	}
 }
