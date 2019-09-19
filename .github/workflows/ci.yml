@@ -1,6 +1,4 @@
-name: GitBook Build
-  uses: docker://khs1994/gitbook
-- name: GitBook Deploy
+name: GitBook Deploy
   uses: docker://khs1994/gitbook
   if: github.event_name == 'push'
   with:
