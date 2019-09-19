@@ -1,19 +1,12 @@
-name: GitHub Actions Build and Deploy Gitbook
-on:
-  push:
-    branches:
-      - master
-jobs:
-  build-and-deploy:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Checkout
-      uses: actions/checkout@master
-
-    - name: Build and Deploy
-      uses: JamesIves/github-pages-deploy-action@master
-      env:
-        ACCESS_TOKEN: ${{ secrets.BOOKTOKEN }}
-        BRANCH: gh-pages
-        FOLDER: _book
-        BUILD_SCRIPT: npm install gitbook-cli && gitbook build
+name: GitBook Build
+  uses: docker://khs1994/gitbook
+- name: GitBook Deploy
+  uses: docker://khs1994/gitbook
+  if: github.event_name == 'push'
+  with:
+    args: deploy
+  env:
+    GIT_USERNAME: "khs1994"
+    GIT_USEREMAIL: "khs1994@khs1994.com"
+    GIT_BRANCH: "gh-pages"
+    GITHUB_TOKEN: ${{ secrets.BOOKTOKEN }}
