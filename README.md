@@ -1,4 +1,4 @@
-# Action
+# GitBook Build
 
 GitHub Pages 的静态资源支持下面 3 个来源：
 
