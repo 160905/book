@@ -31,7 +31,7 @@
 
 ​	Docker 是一个开源项目，诞生于 2013 年初，最初是 dotCloud 公司内部的一个业余项目。它基于 Google 公司推出的 Go 语言实现。 项目后来加入了 Linux 基金会，遵从了 Apache 2.0 协议，项目代码在 [GitHub](https://github.com/docker/docker) 上进行维护。
 
-​ ![4f013603ffadcf5c8fd63d928143c811.png](./images/1-3.png)
+​ ![4f013603ffadcf5c8fd63d928143c811.png](/images/1-3.png)
 
 ​	Docker 自开源后受到广泛的关注和讨论，以至于 dotCloud 公司后来都改名为 Docker Inc。Redhat 已经在其 RHEL6.5 中集中支持 Docker；Google 也在其 PaaS 产品中广泛应用。
 
@@ -63,7 +63,7 @@
 
 ​	下面的图片比较了 Docker 和传统虚拟化方式的不同之处，可见容器是在操作系统层面上实现虚拟化，直接复用本地主机的操作系统，而传统方式则是在硬件层面实现。
 
-![](./images/1-1.png)
+![](/images/1-1.png)
 
 
 与传统的虚拟机相比，Docker优势体现为启动速度快、占用体积小。
@@ -74,7 +74,7 @@
 
 ​	Docker是一个客户端-服务器（C/S）架构程序。Docker客户端只需要向Docker服务器或者守护进程发出请求，服务器或者守护进程将完成所有工作并返回结果。Docker提供了一个命令行工具Docker以及一整套RESTful API。你可以在同一台宿主机上运行Docker守护进程和客户端，也可以从本地的Docker客户端连接到运行在另一台宿主机上的远程Docker守护进程。
 
-![880c9439a3927ebd4214802345596523.png](./images/1-2.png)
+![880c9439a3927ebd4214802345596523.png](/images/1-2.png)
 
 
 ### 1.4.2 Docker镜像与容器
@@ -476,7 +476,7 @@ docker run -di --name=mynginx -p 80:80 nginx
 
 (3) 修改nginx配置文件容 器内server模块化
 
-![81de283a07395eba19e244986c60e602.png](./images/4-3.png)
+![81de283a07395eba19e244986c60e602.png](/images/4-3.png)
 
  
 ```
@@ -686,7 +686,7 @@ hub.c.163.com/library/mysql       latest              9e64176cd8a2        8 week
 
 服务器地址 [http://47.95.195.81:8003](http://47.95.195.81:8003)
 
-![e018d2fb77159c41f46e949b2ee4eecd.png](./images/7-5.png)
+![e018d2fb77159c41f46e949b2ee4eecd.png](/images/7-5.png)
 
 
 
