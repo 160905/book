@@ -1,0 +1,540 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>1.1：GitLab · 雪之梦技术驿站</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="zhuzhennan">
+        <meta name="identifier" content="978-0-13-601970-1" scheme="ISBN">
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-ace/ace.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="docker.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://flutterchina.club" target="_blank" class="custom-link"><div><img width=30 style='position:relative; top:5px; padding-right:5px ' src='http://ww1.sinaimg.cn/large/005KfPpigy1g79b579u3yj3069069jr8.jpg'/>当当当</div></a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    第一章：运维
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.2.1" data-path="gitlab-ci.html">
+            
+                <a href="gitlab-ci.html">
+            
+                    
+                    1.1：GitLab
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="docker.html">
+            
+                <a href="docker.html">
+            
+                    
+                    1.2：初识Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../other/">
+            
+                <a href="../other/">
+            
+                    
+                    第二章：Http
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../other/shi.html">
+            
+                <a href="../other/shi.html">
+            
+                    
+                    1.1：优美诗句
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >1.1：GitLab</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>1.gitlab-ci.yml&#x53C2;&#x6570;&#x5217;&#x8868;</p>
+<table>
+<thead>
+<tr>
+<th>&#x503C;</th>
+<th>&#x662F;&#x5426;&#x5FC5;&#x987B;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>script</td>
+<td>&#x5FC5;&#x987B;</td>
+<td>&#x5B9A;&#x4E49;&#x7531;Runner&#x6267;&#x884C;&#x7684;shell&#x811A;&#x672C;&#x6216;&#x547D;&#x4EE4;</td>
+</tr>
+<tr>
+<td>extends</td>
+<td>&#x975E;&#x5FC5;&#x987B;</td>
+<td>&#x5B9A;&#x4E49;&#x6B64;&#x4F5C;&#x4E1A;&#x5C06;&#x7EE7;&#x627F;&#x7684;&#x914D;&#x7F6E;&#x6761;&#x76EE;</td>
+</tr>
+<tr>
+<td>images</td>
+<td>&#x975E;&#x5FC5;&#x987B;</td>
+<td>&#x9700;&#x8981;&#x4F7F;&#x7528;&#x7684;docker&#x955C;&#x50CF;&#xFF0C;&#x8BF7;&#x67E5;&#x9605;&#x8BE5;&#x6587;&#x6863;</td>
+</tr>
+<tr>
+<td>services</td>
+<td>&#x975E;&#x5FC5;&#x987B;</td>
+<td>&#x5B9A;&#x4E49;&#x6240;&#x9700;&#x7684;docker&#x670D;&#x52A1;&#xFF0C;&#x8BF7;&#x67E5;&#x9605;&#x8BE5;&#x6587;&#x6863;</td>
+</tr>
+<tr>
+<td>stage</td>
+<td>&#x975E;&#x5FC5;&#x987B;</td>
+<td>&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x5DE5;&#x4F5C;&#x573A;&#x666F;&#x9636;&#x6BB5;&#xFF0C;&#x9ED8;&#x8BA4;&#x662F;test</td>
+</tr>
+<tr>
+<td>type</td>
+<td>&#x975E;&#x5FC5;&#x987B;</td>
+<td>stage&#x7684;&#x522B;&#x540D;,&#x4E0D;&#x8D5E;&#x6210;&#x4F7F;&#x7528;</td>
+</tr>
+<tr>
+<td>variables</td>
+<td>&#x975E;&#x5FC5;&#x987B;</td>
+<td>&#x5728;job&#x7EA7;&#x522B;&#x4E0A;&#x5B9A;&#x4E49;&#x7684;&#x53D8;&#x91CF;</td>
+</tr>
+<tr>
+<td>only</td>
+<td>&#x975E;&#x5FC5;&#x987B;</td>
+<td>&#x5B9A;&#x4E49;job&#x6240;&#x5F15;&#x7528;&#x7684;git&#x5206;&#x652F;</td>
+</tr>
+<tr>
+<td>except</td>
+<td>&#x975E;&#x5FC5;&#x987B;</td>
+<td>&#x5B9A;&#x4E49;job&#x6240;&#x4E0D;&#x9002;&#x7528;&#x7684;git&#x5206;&#x652F;</td>
+</tr>
+<tr>
+<td>tags</td>
+<td>&#x975E;&#x5FC5;&#x987B;</td>
+<td>&#x5B9A;&#x4E49;job&#x6240;&#x9002;&#x7528;&#x7684;runner&#xFF0C;tags&#x4E3A;runner&#x6807;&#x7B7E;</td>
+</tr>
+<tr>
+<td>allow_failure</td>
+<td>&#x975E;&#x5FC5;&#x987B;</td>
+<td>&#x5141;&#x8BB8;&#x4EFB;&#x52A1;&#x5931;&#x8D25;&#xFF0C;&#x4F46;&#x662F;&#x5982;&#x679C;&#x5931;&#x8D25;&#xFF0C;&#x5C06;&#x4E0D;&#x4F1A;&#x6539;&#x53D8;&#x63D0;&#x4EA4;&#x72B6;&#x6001;</td>
+</tr>
+<tr>
+<td>when</td>
+<td>&#x975E;&#x5FC5;&#x987B;</td>
+<td>&#x5B9A;&#x4E49;&#x4E86;job&#x4EC0;&#x4E48;&#x65F6;&#x5019;&#x6267;&#x884C;&#xFF0C;&#x53EF;&#x4EE5;&#x662F;on_success&#x3001;on_failure&#x3001;always&#x548C;manual</td>
+</tr>
+<tr>
+<td>dependenices</td>
+<td>&#x975E;&#x5FC5;&#x987B;</td>
+<td>&#x5B9A;&#x4E49;&#x4E86;&#x8BE5;job&#x4F9D;&#x8D56;&#x54EA;&#x4E00;&#x4E2A;job&#xFF0C;&#x5982;&#x679C;&#x8BBE;&#x7F6E;&#x8BE5;&#x9879;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;artifacts&#x8BBE;&#x7F6E;</td>
+</tr>
+<tr>
+<td>artifacts</td>
+<td>&#x975E;&#x5FC5;&#x987B;</td>
+<td>&#x5DE5;&#x4EF6;&#xFF0C;&#x5728;&#x4F9D;&#x8D56;&#x9879;&#x4E4B;&#x95F4;&#x4F20;&#x9012;&#x7684;&#x4E1C;&#x897F;&#xFF0C;&#x7C7B;&#x4F3C;cache&#xFF0C;&#x4F46;&#x539F;&#x7406;&#x4E0E;cache&#x4E0D;&#x540C;</td>
+</tr>
+<tr>
+<td>catch</td>
+<td>&#x975E;&#x5FC5;&#x987B;</td>
+<td>&#x5B9A;&#x4E49;&#x9700;&#x8981;&#x88AB;&#x7F13;&#x5B58;&#x7684;&#x6587;&#x4EF6;&#x3001;&#x6587;&#x4EF6;&#x5939;&#x5217;&#x8868;</td>
+</tr>
+<tr>
+<td>before_script</td>
+<td>&#x975E;&#x5FC5;&#x987B;</td>
+<td>&#x8986;&#x76D6;&#x5728;&#x4F5C;&#x4E1A;&#x4E4B;&#x524D;&#x6267;&#x884C;&#x7684;&#x811A;&#x672C;&#x6216;&#x547D;&#x4EE4;</td>
+</tr>
+<tr>
+<td>after_script</td>
+<td>&#x975E;&#x5FC5;&#x987B;</td>
+<td>&#x8986;&#x76D6;&#x5728;&#x4F5C;&#x4E1A;&#x4E4B;&#x540E;&#x6267;&#x884C;&#x7684;&#x811A;&#x672C;&#x6216;&#x547D;&#x4EE4;</td>
+</tr>
+<tr>
+<td>environment</td>
+<td>&#x975E;&#x5FC5;&#x987B;</td>
+<td>&#x5B9A;&#x4E49;&#x8BA9;job&#x5B8C;&#x6210;&#x90E8;&#x7F72;&#x7684;&#x73AF;&#x5883;&#x540D;&#x79F0;</td>
+</tr>
+<tr>
+<td>coverage</td>
+<td>&#x975E;&#x5FC5;&#x987B;</td>
+<td>&#x5B9A;&#x4E49;job&#x8BBE;&#x7F6E;&#x4EE3;&#x7801;&#x8986;&#x76D6;&#x7387;</td>
+</tr>
+<tr>
+<td>retry</td>
+<td>&#x975E;&#x5FC5;&#x987B;</td>
+<td>&#x5B9A;&#x4E49;job&#x5931;&#x8D25;&#x540E;&#x7684;&#x81EA;&#x52A8;&#x91CD;&#x8BD5;&#x6B21;&#x6570;</td>
+</tr>
+</tbody>
+</table>
+<p>2.gitlab-ci&#x914D;&#x7F6E;&#x793A;&#x4F8B;</p>
+<pre class="language-"><code class="lang-shell"><span class="token comment"># docker&#x955C;&#x50CF;</span>
+image: ruby:2.1
+<span class="token comment"># &#x4F9D;&#x8D56;&#x7684;docker&#x670D;&#x52A1;</span>
+services:
+  - postgres
+<span class="token comment"># &#x5F00;&#x59CB;&#x6267;&#x884C;&#x811A;&#x672C;&#x524D;&#x6240;&#x9700;&#x6267;&#x884C;&#x811A;&#x672C;</span>
+before_script:
+  - bundle <span class="token function">install</span>
+<span class="token comment"># &#x811A;&#x672C;&#x6267;&#x884C;&#x5B8C;&#x540E;&#x7684;&#x94A9;&#x5B50;&#xFF0C;&#x6267;&#x884C;&#x6240;&#x9700;&#x811A;&#x672C;</span>
+after_script:
+  - <span class="token function">rm</span> secrets
+<span class="token comment"># &#x8BE5;ci pipeline&#x9002;&#x5408;&#x7684;&#x573A;&#x666F;</span>
+stages:
+  - build
+  - <span class="token builtin class-name">test</span>
+  - deploy
+<span class="token comment"># &#x5B9A;&#x4E49;&#x7684;&#x4EFB;&#x52A1;1</span>
+job1:
+  <span class="token comment"># &#x573A;&#x666F;&#x4E3A;&#x6784;&#x5EFA;</span>
+  stage: build
+  <span class="token comment"># &#x6240;&#x9700;&#x6267;&#x884C;&#x7684;&#x811A;&#x672C;</span>
+  script:
+    - execute-script-for-job1
+  <span class="token comment"># &#x5728;&#x54EA;&#x4E2A;&#x5206;&#x652F;&#x4E0A;&#x53EF;&#x7528;</span>
+  only:
+    - master
+  <span class="token comment"># &#x6307;&#x5B9A;&#x54EA;&#x4E2A;ci runner&#x8DD1;&#x8BE5;&#x5DE5;&#x4F5C;</span>
+  tags:
+    - docker
+</code></pre>
+<p>3.&#x751F;&#x4EA7;&#x73AF;&#x5883;&#x914D;&#x7F6E;&#x793A;&#x4F8B;</p>
+<pre class="language-"><code class="lang-shell"><span class="token comment"># general settings for all</span>
+.general: <span class="token operator">&amp;</span>general
+  stage: deploy     <span class="token comment">#&#x5B9A;&#x4E49;&#x6784;&#x5EFA;&#x573A;&#x666F;&#x4E3A;&#x90E8;&#x7F72;&#xFF0C;1.init&#x521D;&#x59CB;&#x5316;&#x3001;2.lint&#x4EE3;&#x7801;&#x89C4;&#x8303;&#x3001;3.unit_test&#x5355;&#x5143;&#x6D4B;&#x8BD5;&#x3001;4.build&#x6784;&#x5EFA;&#x3001;5.deploy&#x90E8;&#x7F72;&#xFF0C;&#x82E5;&#x5176;&#x4E2D;&#x4EFB;&#x52A1;&#x4E00;&#x4E2A;&#x6B65;&#x9AA4;&#x51FA;&#x9519;&#xFF0C;&#x90FD;&#x4E0D;&#x4F1A;&#x5230;&#x90E8;&#x7F72;</span>
+  only:
+    - hotfix/hotfix-conference      <span class="token comment">#&#x6307;&#x5B9A;&#x5206;&#x652F;&#x540D;&#x4E3A;&#x7D27;&#x6025;&#x4FEE;bug&#xFF0C;master&#x4E3B;&#x5F00;&#x53D1;&#x5206;&#x652F;&#x3001;feature&#x65B0;&#x529F;&#x80FD;&#x5206;&#x652F;&#x3001;release&#x53D1;&#x5E03;&#x5206;&#x652F;&#x3001;hotfix&#x7D27;&#x6025;&#x4FEE;bug&#x5206;&#x652F;</span>
+  when: manual   <span class="token comment">#&#x89E6;&#x53D1;&#x6761;&#x4EF6;&#x4E3A;&#x624B;&#x5DE5;&#x6267;&#x884C;</span>
+  tags:
+    - cloud         <span class="token comment">#&#x6307;&#x5B9A;&#x5728;&#x54EA;&#x4E2A;ci runner&#x5DE5;&#x4F5C;&#xFF0C;&#x4E91;</span>
+  image: ip:30050/builder/maven:v1-alpine      <span class="token comment">#&#x9752;&#x4E91;maven&#x5BB9;&#x5668;</span>
+  script:
+    - <span class="token builtin class-name">echo</span> <span class="token string">&quot;current branch ****** <span class="token variable">$CI_COMMIT_REF_NAME</span> ******&quot;</span>
+    - <span class="token builtin class-name">echo</span> <span class="token string">&quot;deploy start ...&quot;</span>
+
+    - /share/script/deploy.sh <span class="token variable">$CI_JOB_NAME</span>     <span class="token comment">#&#x6267;&#x884C;&#x811A;&#x672C;&#xFF0C;&#x6B64;&#x811A;&#x672C;&#x8DEF;&#x5F84;&#x662F;&#x88AB;&#x6620;&#x5C04;&#x81F3;gitlab runner&#x5BB9;&#x5668;&#x5185;&#x7684;&#x8DEF;&#x5F84;&#xFF0C;&#x53C2;&#x6570;&#x4E3A;CI_JOB_NAME&#x53D8;&#x91CF;</span>
+
+    - <span class="token builtin class-name">echo</span> <span class="token string">&quot;deploy done.&quot;</span>
+
+<span class="token comment"># general settings for dev</span>
+.dev: <span class="token operator">&amp;</span>dev        <span class="token comment">#&#x5F00;&#x53D1;&#x73AF;&#x5883;</span>
+  <span class="token operator">&lt;&lt;</span>: *general    <span class="token comment">#&#x7EE7;&#x627F;general&#x5B9A;&#x4E49;&#x7684;&#x53D8;&#x91CF;&#xFF0C;&#x82E5;&#x91CD;&#x65B0;&#x5B9A;&#x4E49;&#x5C06;&#x88AB;&#x8986;&#x76D6;</span>
+  tags:
+    - <span class="token builtin class-name">local</span>     <span class="token comment">#&#x672C;&#x5730;</span>
+  image: ip:30050/builder/maven:v1-alpine   <span class="token comment">#&#x672C;&#x5730;maven&#x5BB9;&#x5668;</span>
+
+
+<span class="token comment"># golive deploy setting</span>
+.golive: <span class="token operator">&amp;</span>golive  
+  <span class="token operator">&lt;&lt;</span>: *general  <span class="token comment">#&#x7EE7;&#x627F;general&#x5B9A;&#x4E49;&#x7684;&#x53D8;&#x91CF;&#xFF0C;&#x82E5;&#x518D;&#x5B9A;&#x4E49;&#x5C06;&#x88AB;&#x8986;&#x76D6;</span>
+  only:
+    - master    <span class="token comment">#&#x6307;&#x5B9A;&#x5206;&#x652F;&#x540D;</span>
+  script:
+    - <span class="token builtin class-name">echo</span> <span class="token string">&quot;current branch ****** <span class="token variable">$CI_COMMIT_REF_NAME</span> ******&quot;</span>
+    - <span class="token builtin class-name">echo</span> <span class="token string">&quot;deploy golive start ...&quot;</span>
+
+    - /share/script/golive/deploy.sh <span class="token variable">$CI_JOB_NAME</span>
+
+    - <span class="token builtin class-name">echo</span> <span class="token string">&quot;deploy golive done.&quot;</span>
+
+
+<span class="token comment">#######&#x5B9A;&#x4E49;hotfix/hotfix-conference &#x5206;&#x652F;&#x4F7F;&#x7528;dev&#x4F7F;&#x7528;dev job&#x7684;&#x914D;&#x7F6E;&#x3001;test&#x4F7F;&#x7528; general job&#x7684;&#x914D;&#x7F6E;  </span>
+<span class="token comment"># deploy discovery</span>
+discovery - dev: *dev
+discovery - test: *general
+
+<span class="token comment"># deploy services</span>
+services - dev: *dev
+services - test: *general
+
+<span class="token comment">######&#x5B9A;&#x4E49;&#x4EC5;master&#x5206;&#x652F;&#x4F7F;&#x7528;golive job&#x5B9A;&#x4E49;&#x7684;&#x914D;&#x7F6E;</span>
+backend - staging - node1: *golive
+backend - staging - node2: *golive
+
+backend - prod - node1: *golive  
+backend - prod - node2: *golive
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: 第一章：运维">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="docker.html" class="navigation navigation-next " aria-label="Next page: 1.2：初识Docker">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"1.1：GitLab","level":"1.2.1","depth":2,"next":{"title":"1.2：初识Docker","level":"1.2.2","depth":2,"path":"pages/op/docker.md","ref":"pages/op/docker.md","articles":[]},"previous":{"title":"第一章：运维","level":"1.2","depth":1,"path":"pages/op/index.md","ref":"pages/op/index.md","articles":[{"title":"1.1：GitLab","level":"1.2.1","depth":2,"path":"pages/op/gitlab-ci.md","ref":"pages/op/gitlab-ci.md","articles":[]},{"title":"1.2：初识Docker","level":"1.2.2","depth":2,"path":"pages/op/docker.md","ref":"pages/op/docker.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-search","search-pro","ace","splitter","prism","donate","-highlight"],"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"prism":{"lang":{"shell":"bash"}},"ace":{},"splitter":{},"search-pro":{"cutWordLib":"nodejieba","defineWord":["Gitbook Use"]},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"donate":{"alipay":"","alipayText":"支付宝打赏","button":"WeChat","title":"","wechat":"http://ww1.sinaimg.cn/large/005KfPpigy1g74nb6zhkej30kw0r2771.jpg","wechatText":"Burn me quickly"},"fontsettings":{"theme":"white","family":"sans","size":2},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"zhuzhennan","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"978-0-13-601970-1","variables":{},"title":"雪之梦技术驿站","language":"zh-hans","links":{"sidebar":{"<div><img width=30 style='position:relative; top:5px; padding-right:5px ' src='http://ww1.sinaimg.cn/large/005KfPpigy1g79b579u3yj3069069jr8.jpg'/>当当当</div>":"https://flutterchina.club"}},"gitbook":"3.2.3","description":"雪之梦技术驿站又名snowdreams1006的技术小屋.主要分享个人的学习经验,一家之言,仅供参考.","direction":"ltr"},"file":{"path":"pages/op/gitlab-ci.md","mtime":"2019-10-10T13:20:10.578Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-10-10T13:21:53.315Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ace/ace/ace.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ace/ace.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
