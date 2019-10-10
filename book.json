@@ -8,7 +8,7 @@
 	"gitbook": "3.2.3",
 	"links": {
 		"sidebar": {
-			"<div><img width=30 style='position:relative; top:5px; padding-right:5px ' src='http://ww1.sinaimg.cn/large/005KfPpigy1g79b579u3yj3069069jr8.jpg'/> 激情也许真的有爱</div>": "https://flutterchina.club"
+			"<div><img width=30 style='position:relative; top:5px; padding-right:5px ' src='http://ww1.sinaimg.cn/large/005KfPpigy1g79b579u3yj3069069jr8.jpg'/>当当当</div>": "https://flutterchina.club"
 		}
 	},
 	"styles": {
@@ -41,8 +41,8 @@
 		},
 		"donate": {
 			"wechat": "http://ww1.sinaimg.cn/large/005KfPpigy1g74nb6zhkej30kw0r2771.jpg",
-			"button": "加微信",
-			"wechatText": "快烧我"
+			"button": "WeChat",
+			"wechatText": "Burn me quickly"
 		}
 	}
 }

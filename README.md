@@ -1,3 +1,8 @@
+# GitBook dev
+  启动本地开发环境
+  ```shell
+  gitbook serve
+  ```
 # GitBook Build
 
 GitHub Pages 的静态资源支持下面 3 个来源：
